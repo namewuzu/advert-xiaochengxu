@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dk.mapper.VedioMapper" >
+  <resultMap id="BaseResultMap" type="com.dk.entity.Vedio" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="vedio_url" property="vedioUrl" jdbcType="VARCHAR" />
+    <result column="vedio_title" property="vedioTitle" jdbcType="VARCHAR" />
+    <result column="author_url" property="authorUrl" jdbcType="VARCHAR" />
+    <result column="author_name" property="authorName" jdbcType="VARCHAR" />
+    <result column="point_count" property="pointCount" jdbcType="INTEGER" />
+    <result column="share_count" property="shareCount" jdbcType="INTEGER" />
+    <result column="comment_count" property="commentCount" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="operator_name" property="operatorName" jdbcType="VARCHAR" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="vedio_data" property="vedioData" jdbcType="TIMESTAMP" />
+    <result column="play_time" property="playTime" jdbcType="INTEGER" />
+    <result column="category" property="category" jdbcType="VARCHAR" />
+    <result column="autor_user_id" property="autorUserId" jdbcType="VARCHAR" />
+    <result column="vedio_img" property="vedioImg" jdbcType="VARCHAR" />
+    <result column="category_id" property="categoryId" jdbcType="VARCHAR" />
+    <result column="delete_status" property="deleteStatus" jdbcType="TINYINT" />
+    <result column="play_count" property="playCount" jdbcType="INTEGER" />
+    <result column="collect_count" property="collectCount" jdbcType="INTEGER" />
+    <result column="weight" property="weight" jdbcType="SMALLINT" />
+    <result column="detail_link" property="detailLink" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, vedio_url, vedio_title, author_url, author_name, point_count, share_count, comment_count, 
+    create_time, operator_name, update_time, operator_id, vedio_data, play_time, category, 
+    autor_user_id, vedio_img, category_id, delete_status, play_count, collect_count, 
+    weight,detail_link
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_vedio
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectNextTen" resultMap="BaseResultMap"  >
+    select
+    <include refid="Base_Column_List" />
+    from t_vedio
+    limit #{start,jdbcType=INTEGER},#{num,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_vedio
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.Vedio"  useGeneratedKeys="true" keyProperty="id">
+    insert into t_vedio (id, vedio_url, vedio_title, 
+      author_url, author_name, point_count, 
+      share_count, comment_count, create_time, 
+      operator_name, update_time, operator_id, 
+      vedio_data, play_time, category, 
+      autor_user_id, vedio_img, category_id, 
+      delete_status, play_count, collect_count, 
+      weight,detail_link)
+    values (#{id,jdbcType=INTEGER}, #{vedioUrl,jdbcType=VARCHAR}, #{vedioTitle,jdbcType=VARCHAR}, 
+      #{authorUrl,jdbcType=VARCHAR}, #{authorName,jdbcType=VARCHAR}, #{pointCount,jdbcType=INTEGER}, 
+      #{shareCount,jdbcType=INTEGER}, #{commentCount,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{operatorName,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{operatorId,jdbcType=INTEGER}, 
+      #{vedioData,jdbcType=TIMESTAMP}, #{playTime,jdbcType=INTEGER}, #{category,jdbcType=VARCHAR}, 
+      #{autorUserId,jdbcType=VARCHAR}, #{vedioImg,jdbcType=VARCHAR}, #{categoryId,jdbcType=VARCHAR}, 
+      #{deleteStatus,jdbcType=TINYINT}, #{playCount,jdbcType=INTEGER}, #{collectCount,jdbcType=INTEGER}, 
+      #{weight,jdbcType=SMALLINT},#{detailLink,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.Vedio" >
+    insert into t_vedio
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="vedioUrl != null" >
+        vedio_url,
+      </if>
+      <if test="vedioTitle != null" >
+        vedio_title,
+      </if>
+      <if test="authorUrl != null" >
+        author_url,
+      </if>
+      <if test="authorName != null" >
+        author_name,
+      </if>
+      <if test="pointCount != null" >
+        point_count,
+      </if>
+      <if test="shareCount != null" >
+        share_count,
+      </if>
+      <if test="commentCount != null" >
+        comment_count,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="operatorName != null" >
+        operator_name,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="operatorId != null" >
+        operator_id,
+      </if>
+      <if test="vedioData != null" >
+        vedio_data,
+      </if>
+      <if test="playTime != null" >
+        play_time,
+      </if>
+      <if test="category != null" >
+        category,
+      </if>
+      <if test="autorUserId != null" >
+        autor_user_id,
+      </if>
+      <if test="vedioImg != null" >
+        vedio_img,
+      </if>
+      <if test="categoryId != null" >
+        category_id,
+      </if>
+      <if test="deleteStatus != null" >
+        delete_status,
+      </if>
+      <if test="playCount != null" >
+        play_count,
+      </if>
+      <if test="collectCount != null" >
+        collect_count,
+      </if>
+      <if test="weight != null" >
+        weight,
+      </if>
+      <if test="detailLink != null" >
+        detail_link,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="vedioUrl != null" >
+        #{vedioUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioTitle != null" >
+        #{vedioTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="authorUrl != null" >
+        #{authorUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="authorName != null" >
+        #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="pointCount != null" >
+        #{pointCount,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null" >
+        #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null" >
+        #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null" >
+        #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null" >
+        #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="vedioData != null" >
+        #{vedioData,jdbcType=TIMESTAMP},
+      </if>
+      <if test="playTime != null" >
+        #{playTime,jdbcType=INTEGER},
+      </if>
+      <if test="category != null" >
+        #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="autorUserId != null" >
+        #{autorUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioImg != null" >
+        #{vedioImg,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId != null" >
+        #{categoryId,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteStatus != null" >
+        #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="playCount != null" >
+        #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="collectCount != null" >
+        #{collectCount,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null" >
+        #{weight,jdbcType=SMALLINT},
+      </if>
+      <if test="detailLink != null" >
+        #{detailLink,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.Vedio" >
+    update t_vedio
+    <set >
+      <if test="vedioUrl != null" >
+        vedio_url = #{vedioUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioTitle != null" >
+        vedio_title = #{vedioTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="authorUrl != null" >
+        author_url = #{authorUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="authorName != null" >
+        author_name = #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="pointCount != null" >
+        point_count = #{pointCount,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null" >
+        share_count = #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null" >
+        comment_count = #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null" >
+        operator_name = #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null" >
+        operator_id = #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="vedioData != null" >
+        vedio_data = #{vedioData,jdbcType=TIMESTAMP},
+      </if>
+      <if test="playTime != null" >
+        play_time = #{playTime,jdbcType=INTEGER},
+      </if>
+      <if test="category != null" >
+        category = #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="autorUserId != null" >
+        autor_user_id = #{autorUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioImg != null" >
+        vedio_img = #{vedioImg,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId != null" >
+        category_id = #{categoryId,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteStatus != null" >
+        delete_status = #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="playCount != null" >
+        play_count = #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="collectCount != null" >
+        collect_count = #{collectCount,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null" >
+        weight = #{weight,jdbcType=SMALLINT},
+      </if>
+      <if test="detailLink != null" >
+        detail_link = #{detailLink,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.Vedio" >
+    update t_vedio
+    set vedio_url = #{vedioUrl,jdbcType=VARCHAR},
+      vedio_title = #{vedioTitle,jdbcType=VARCHAR},
+      author_url = #{authorUrl,jdbcType=VARCHAR},
+      author_name = #{authorName,jdbcType=VARCHAR},
+      point_count = #{pointCount,jdbcType=INTEGER},
+      share_count = #{shareCount,jdbcType=INTEGER},
+      comment_count = #{commentCount,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      operator_id = #{operatorId,jdbcType=INTEGER},
+      vedio_data = #{vedioData,jdbcType=TIMESTAMP},
+      play_time = #{playTime,jdbcType=INTEGER},
+      category = #{category,jdbcType=VARCHAR},
+      autor_user_id = #{autorUserId,jdbcType=VARCHAR},
+      vedio_img = #{vedioImg,jdbcType=VARCHAR},
+      category_id = #{categoryId,jdbcType=VARCHAR},
+      delete_status = #{deleteStatus,jdbcType=TINYINT},
+      play_count = #{playCount,jdbcType=INTEGER},
+      collect_count = #{collectCount,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=SMALLINT},
+       detail_link = #{detailLink,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+<!--  分页查询-->
+  <resultMap id="BaseVoResultMap" type="com.dk.vo.VedioVo" extends="BaseResultMap">
+    <result column="shareCountLow" property="shareCountLow" jdbcType="INTEGER" />
+    <result column="shareCountHigh" property="shareCountHigh" jdbcType="INTEGER" />
+  </resultMap>
+
+  <!-- 根据参数查询视频列表，有部分重复视频，查询时根据视频链接来进行去重，爬取视频入库时可先判断数据库中是否已有该视频，若有则不插入（唯一键） -->
+  <select id="getVoPage" resultMap="BaseVoResultMap">
+    select  id, vedio_url, vedio_title, author_url, author_name, point_count, share_count, comment_count,
+    create_time, vedio_data, play_time, category,
+    vedio_img, category_id, play_count, collect_count,weight,detail_link
+    from t_vedio
+    where delete_status = 1
+    <if test="vedio.vedioTitle != null and vedio.vedioTitle !=''" >
+     and vedio_title LIKE concat('%',#{vedio.vedioTitle},'%')
+    </if>
+    <if test="vedio.categoryId != null and vedio.categoryId !=''" >
+     and category_id = #{vedio.categoryId}
+    </if>
+    <if test="vedio.shareCountLow != null" >
+     and share_count &gt;= #{vedio.shareCountLow}
+    </if>
+    <if test="vedio.shareCountHigh != null" >
+     and share_count &lt;= #{vedio.shareCountHigh}
+    </if>
+    group by vedio_url
+    <foreach collection="sort" index="key"  item="value" open=" order by " close=" "    separator="," >
+        <if test="value==2">
+          ${key}  desc
+        </if>
+        <if test="value==1">
+          ${key}  asc
+        </if>
+    </foreach>
+
+  </select>
+
+
+  <select id="updateTodayData" statementType="CALLABLE">
+     <![CDATA[
+          call data_count(
+                1,
+                #{startDate,mode=IN,jdbcType=VARCHAR},
+                #{endDate,mode=IN,jdbcType=VARCHAR}
+          );
+        ]]>
+  </select>
+
+  <insert id="insertForeach" parameterType="java.util.List" useGeneratedKeys="false">
+    insert into t_vedio
+    (vedio_url, vedio_title, author_url, author_name, point_count, share_count, comment_count,
+    vedio_data, play_time, category,create_time,
+    autor_user_id, vedio_img, category_id, delete_status, play_count, collect_count)
+    values
+    <foreach collection="list" item="item" index="index" separator=",">
+      (
+      #{item.vedioUrl},
+      #{item.vedioTitle},
+      #{item.authorUrl},
+      #{item.authorName},
+      #{item.pointCount},
+      0,
+      0,
+      #{item.vedioData},
+      #{item.playTime},
+      #{item.category},
+      #{item.createTime},
+      #{item.autorUserId},
+      #{item.vedioImg},
+      #{item.categoryId},
+      1,
+      0,
+      0
+      )
+    </foreach>
+  </insert>
+
+  <!--查询需要删除的视频，条件：分享/播放、点赞/播放、评论/播放、收藏/播放同时为0的视频-->
+  <select id="findNeedDeleteVedios" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_vedio
+    where share_count = 0 and comment_count = 0 and collect_count = 0 and point_count = 0 and play_count <![CDATA[ <> ]]> 0 and delete_status = 1
+  </select>
+
+  <!-- 删除指定的视频，遍历数组时collection属性值需指定为array -->
+  <update id="deleteVediosByIds" parameterType="java.util.List">
+    update t_vedio set delete_status = 2
+    where id in
+    <foreach collection="ids" index="key"  item="id" open="(" close=")" separator=",">
+        #{id}
+    </foreach>
+    and delete_status = 1
+  </update>
+
+
+<!-- 删除那些分享/播放、点赞/播放、评论/播放、收藏/播放同时为0的视频 -->
+  <update id="cleanVedios">
+    update t_vedio set delete_status = 2
+    where share_count = 0 and comment_count = 0 and collect_count = 0 and point_count = 0 and play_count <![CDATA[ <> ]]> 0 and delete_status = 1;
+  </update>
+
+<!--  <update id="cleanVedios">
+    update t_vedio as t1
+    left join t_vedio_collect as t2 on t1.id = t2.vedio_id
+    left join t_vedio_play as t3 on t1.id = t3.vedio_id
+    left join t_vedio_point as t4 on t1.id = t4.vedio_id
+    left join t_vedio_share as t5 on t1.id = t5.vedio_id
+    set t1.delete_status = 2, t2.delete_status = 2, t3.delete_status = 2, t4.delete_status = 2, t5.delete_status = 2
+    where share_count = 0 and comment_count = 0 and collect_count = 0 and point_count and play_count <![CDATA[ <> ]]> 0;
+  </update>-->
+
+</mapper>

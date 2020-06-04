@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="qqdomians:war">
+    <output-path>$PROJECT_DIR$/qqdomians/target</output-path>
+    <root id="archive" name="qqdomains.war">
+      <element id="artifact" artifact-name="qqdomians:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dk.mapper.CommentMapper">
+  <resultMap id="BaseResultMap" type="com.dk.entity.Comment">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="vedio_id" jdbcType="INTEGER" property="vedioId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="is_reply" jdbcType="TINYINT" property="isReply" />
+    <result column="replyed_user_name" jdbcType="VARCHAR" property="replyedUserName" />
+    <result column="replyed_user_id" jdbcType="INTEGER" property="replyedUserId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="operator_name" jdbcType="VARCHAR" property="operatorName" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="operator_id" jdbcType="INTEGER" property="operatorId" />
+    <result column="delete_status" jdbcType="TINYINT" property="deleteStatus" />
+    <result column="avatar_url" jdbcType="VARCHAR" property="avatarUrl" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, vedio_id, user_id, comment, user_name, is_reply, replyed_user_name, replyed_user_id, 
+    create_time, operator_name, update_time, operator_id, delete_status, avatar_url
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_comment
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_comment
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.Comment">
+    insert into t_comment (id, vedio_id, user_id, 
+      comment, user_name, is_reply, 
+      replyed_user_name, replyed_user_id, create_time, 
+      operator_name, update_time, operator_id, 
+      delete_status, avatar_url)
+    values (#{id,jdbcType=INTEGER}, #{vedioId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, 
+      #{comment,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{isReply,jdbcType=TINYINT}, 
+      #{replyedUserName,jdbcType=VARCHAR}, #{replyedUserId,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{operatorName,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{operatorId,jdbcType=INTEGER}, 
+      #{deleteStatus,jdbcType=TINYINT}, #{avatarUrl,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.Comment">
+    insert into t_comment
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="vedioId != null">
+        vedio_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="comment != null">
+        comment,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="isReply != null">
+        is_reply,
+      </if>
+      <if test="replyedUserName != null">
+        replyed_user_name,
+      </if>
+      <if test="replyedUserId != null">
+        replyed_user_id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="operatorName != null">
+        operator_name,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="operatorId != null">
+        operator_id,
+      </if>
+      <if test="deleteStatus != null">
+        delete_status,
+      </if>
+      <if test="avatarUrl != null">
+        avatar_url,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="vedioId != null">
+        #{vedioId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null">
+        #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="isReply != null">
+        #{isReply,jdbcType=TINYINT},
+      </if>
+      <if test="replyedUserName != null">
+        #{replyedUserName,jdbcType=VARCHAR},
+      </if>
+      <if test="replyedUserId != null">
+        #{replyedUserId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null">
+        #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null">
+        #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteStatus != null">
+        #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="avatarUrl != null">
+        #{avatarUrl,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.Comment">
+    update t_comment
+    <set>
+      <if test="vedioId != null">
+        vedio_id = #{vedioId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null">
+        comment = #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="isReply != null">
+        is_reply = #{isReply,jdbcType=TINYINT},
+      </if>
+      <if test="replyedUserName != null">
+        replyed_user_name = #{replyedUserName,jdbcType=VARCHAR},
+      </if>
+      <if test="replyedUserId != null">
+        replyed_user_id = #{replyedUserId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null">
+        operator_name = #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null">
+        operator_id = #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteStatus != null">
+        delete_status = #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="avatarUrl != null">
+        avatar_url = #{avatarUrl,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.Comment">
+    update t_comment
+    set vedio_id = #{vedioId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      comment = #{comment,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      is_reply = #{isReply,jdbcType=TINYINT},
+      replyed_user_name = #{replyedUserName,jdbcType=VARCHAR},
+      replyed_user_id = #{replyedUserId,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      operator_id = #{operatorId,jdbcType=INTEGER},
+      delete_status = #{deleteStatus,jdbcType=TINYINT},
+      avatar_url = #{avatarUrl,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <!--  分页查询-->
+  <resultMap id="BaseVoResultMap" type="com.dk.vo.CommentVo" extends="BaseResultMap">
+    <result column="nickName" property="nickName" jdbcType="VARCHAR" />
+    <result column="vedio_title" property="title" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="getVoPage" parameterType="com.dk.vo.CommentVo" resultMap="BaseVoResultMap">
+    select   t1.id, t1.vedio_id, t1.user_id, t1.comment, t1.user_name, t1.is_reply, t1.replyed_user_name, t1.replyed_user_id,
+    t1.create_time, t1.operator_name,t1.avatar_url,t2.vedio_title
+    from t_comment t1
+    LEFT JOIN  t_vedio t2 on t1.vedio_id = t2.id and t2.delete_status =1
+    where  t1.delete_status = 1
+    <if test="title != null and title != ''" >
+      and t2.vedio_title LIKE concat('%',#{title},'%')
+    </if>
+    <if test="nickName != null and nickName != ''" >
+      and t1.user_name LIKE concat('%',#{nickName},'%')
+    </if>
+    <if test="startDate != null" >
+      and t1.create_time &gt;= #{startDate}
+    </if>
+    <if test="endDate != null" >
+      and t1.create_time &lt;= #{endDate}
+    </if>
+  </select>
+
+  <!--  分页查询-->
+  <resultMap id="BaseDetailVoResultMap" type="com.dk.vo.VedioCommentVo" extends="BaseResultMap">
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="nickName" property="nickName" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="getDetailVoPage" parameterType="com.dk.vo.VedioCommentVo" resultMap="BaseVoResultMap">
+    select t1.id,t1.create_time,t1.user_id,t1.vedio_id,t2.vedio_title as title,t3.nick_name as nickName
+    from t_comment t1
+    left JOIN t_vedio t2 on t1.vedio_id = t2.id and t2.delete_status = 1
+    LEFT JOIN t_user t3 on t1.user_id = t3.id
+    where 1=1
+    <if test="userId != null" >
+      and t1.user_id = #{userId}
+    </if>
+    <if test="vedioId != null" >
+      and t1.vedio_id = #{vedioId}
+    </if>
+    <if test="startDate != null" >
+      and t1.create_time &gt;= #{startDate}
+    </if>
+    <if test="endDate != null" >
+      and t1.create_time &lt;= #{endtDate}
+    </if>
+  </select>
+
+</mapper>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dk.mapper.contet.ContentMapper" >
+  <resultMap id="BaseResultMap" type="com.dk.entity.Content" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="vedio_url" property="vedioUrl" jdbcType="VARCHAR" />
+    <result column="vedio_title" property="vedioTitle" jdbcType="VARCHAR" />
+    <result column="imgage_url" property="imgageUrl" jdbcType="VARCHAR" />
+    <result column="duration" property="duration" jdbcType="VARCHAR" />
+    <result column="author_id" property="authorId" jdbcType="VARCHAR" />
+    <result column="vedio_id" property="vedioId" jdbcType="VARCHAR" />
+    <result column="author_name" property="authorName" jdbcType="VARCHAR" />
+    <result column="format" property="format" jdbcType="VARCHAR" />
+    <result column="vedio_class_id" property="vedioClassId" jdbcType="INTEGER" />
+    <result column="browse_price" property="browsePrice" jdbcType="DECIMAL" />
+    <result column="play_count" property="playCount" jdbcType="INTEGER" />
+    <result column="browse_count" property="browseCount" jdbcType="INTEGER" />
+    <result column="share_count" property="shareCount" jdbcType="INTEGER" />
+    <result column="del_status" property="delStatus" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, create_time, vedio_url, vedio_title, imgage_url, duration, author_id, vedio_id, 
+    author_name, format, vedio_class_id, browse_price, play_count, browse_count, share_count, 
+    del_status
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_content
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_content
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.Content" >
+    insert into t_content (id, create_time, vedio_url, 
+      vedio_title, imgage_url, duration, 
+      author_id, vedio_id, author_name, 
+      format, vedio_class_id, browse_price, 
+      play_count, browse_count, share_count, 
+      del_status)
+    values (#{id,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{vedioUrl,jdbcType=VARCHAR}, 
+      #{vedioTitle,jdbcType=VARCHAR}, #{imgageUrl,jdbcType=VARCHAR}, #{duration,jdbcType=VARCHAR}, 
+      #{authorId,jdbcType=VARCHAR}, #{vedioId,jdbcType=VARCHAR}, #{authorName,jdbcType=VARCHAR}, 
+      #{format,jdbcType=VARCHAR}, #{vedioClassId,jdbcType=INTEGER}, #{browsePrice,jdbcType=DECIMAL}, 
+      #{playCount,jdbcType=INTEGER}, #{browseCount,jdbcType=INTEGER}, #{shareCount,jdbcType=INTEGER}, 
+      #{delStatus,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.Content" >
+    insert into t_content
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="vedioUrl != null" >
+        vedio_url,
+      </if>
+      <if test="vedioTitle != null" >
+        vedio_title,
+      </if>
+      <if test="imgageUrl != null" >
+        imgage_url,
+      </if>
+      <if test="duration != null" >
+        duration,
+      </if>
+      <if test="authorId != null" >
+        author_id,
+      </if>
+      <if test="vedioId != null" >
+        vedio_id,
+      </if>
+      <if test="authorName != null" >
+        author_name,
+      </if>
+      <if test="format != null" >
+        format,
+      </if>
+      <if test="vedioClassId != null" >
+        vedio_class_id,
+      </if>
+      <if test="browsePrice != null" >
+        browse_price,
+      </if>
+      <if test="playCount != null" >
+        play_count,
+      </if>
+      <if test="browseCount != null" >
+        browse_count,
+      </if>
+      <if test="shareCount != null" >
+        share_count,
+      </if>
+      <if test="delStatus != null" >
+        del_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="vedioUrl != null" >
+        #{vedioUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioTitle != null" >
+        #{vedioTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="imgageUrl != null" >
+        #{imgageUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="duration != null" >
+        #{duration,jdbcType=VARCHAR},
+      </if>
+      <if test="authorId != null" >
+        #{authorId,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioId != null" >
+        #{vedioId,jdbcType=VARCHAR},
+      </if>
+      <if test="authorName != null" >
+        #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="format != null" >
+        #{format,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioClassId != null" >
+        #{vedioClassId,jdbcType=INTEGER},
+      </if>
+      <if test="browsePrice != null" >
+        #{browsePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="playCount != null" >
+        #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="browseCount != null" >
+        #{browseCount,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null" >
+        #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="delStatus != null" >
+        #{delStatus,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.Content" >
+    update t_content
+    <set >
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="vedioUrl != null" >
+        vedio_url = #{vedioUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioTitle != null" >
+        vedio_title = #{vedioTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="imgageUrl != null" >
+        imgage_url = #{imgageUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="duration != null" >
+        duration = #{duration,jdbcType=VARCHAR},
+      </if>
+      <if test="authorId != null" >
+        author_id = #{authorId,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioId != null" >
+        vedio_id = #{vedioId,jdbcType=VARCHAR},
+      </if>
+      <if test="authorName != null" >
+        author_name = #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="format != null" >
+        format = #{format,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioClassId != null" >
+        vedio_class_id = #{vedioClassId,jdbcType=INTEGER},
+      </if>
+      <if test="browsePrice != null" >
+        browse_price = #{browsePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="playCount != null" >
+        play_count = #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="browseCount != null" >
+        browse_count = #{browseCount,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null" >
+        share_count = #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="delStatus != null" >
+        del_status = #{delStatus,jdbcType=TINYINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.Content" >
+    update t_content
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      vedio_url = #{vedioUrl,jdbcType=VARCHAR},
+      vedio_title = #{vedioTitle,jdbcType=VARCHAR},
+      imgage_url = #{imgageUrl,jdbcType=VARCHAR},
+      duration = #{duration,jdbcType=VARCHAR},
+      author_id = #{authorId,jdbcType=VARCHAR},
+      vedio_id = #{vedioId,jdbcType=VARCHAR},
+      author_name = #{authorName,jdbcType=VARCHAR},
+      format = #{format,jdbcType=VARCHAR},
+      vedio_class_id = #{vedioClassId,jdbcType=INTEGER},
+      browse_price = #{browsePrice,jdbcType=DECIMAL},
+      play_count = #{playCount,jdbcType=INTEGER},
+      browse_count = #{browseCount,jdbcType=INTEGER},
+      share_count = #{shareCount,jdbcType=INTEGER},
+      del_status = #{delStatus,jdbcType=TINYINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

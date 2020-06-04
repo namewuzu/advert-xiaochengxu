@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dk.mapper.VedioMapper">
+  <resultMap id="BaseResultMap" type="com.dk.entity.Vedio">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="vedio_url" jdbcType="VARCHAR" property="vedioUrl" />
+    <result column="vedio_title" jdbcType="VARCHAR" property="vedioTitle" />
+    <result column="author_url" jdbcType="VARCHAR" property="authorUrl" />
+    <result column="author_name" jdbcType="VARCHAR" property="authorName" />
+    <result column="point_count" jdbcType="INTEGER" property="pointCount" />
+    <result column="share_count" jdbcType="INTEGER" property="shareCount" />
+    <result column="comment_count" jdbcType="INTEGER" property="commentCount" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="operator_name" jdbcType="VARCHAR" property="operatorName" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="operator_id" jdbcType="INTEGER" property="operatorId" />
+    <result column="vedio_data" jdbcType="TIMESTAMP" property="vedioData" />
+    <result column="play_time" jdbcType="INTEGER" property="playTime" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="autor_user_id" jdbcType="VARCHAR" property="autorUserId" />
+    <result column="vedio_img" jdbcType="VARCHAR" property="vedioImg" />
+    <result column="category_id" jdbcType="VARCHAR" property="categoryId" />
+    <result column="delete_status" jdbcType="TINYINT" property="deleteStatus" />
+    <result column="play_count" jdbcType="INTEGER" property="playCount" />
+    <result column="collect_count" jdbcType="INTEGER" property="collectCount" />
+    <result column="weight" jdbcType="SMALLINT" property="weight" />
+    <result column="today_count" jdbcType="INTEGER" property="todayCount" />
+    <result column="today" jdbcType="DATE" property="today" />
+    <result column="detail_link" jdbcType="VARCHAR" property="detailLink" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, vedio_url, vedio_title, author_url, author_name, point_count, share_count, comment_count, 
+    create_time, operator_name, update_time, operator_id, vedio_data, play_time, category, 
+    autor_user_id, vedio_img, category_id, delete_status, play_count, collect_count, 
+    weight, today_count, today,detail_link
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_vedio
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_vedio
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.Vedio">
+    insert into t_vedio (id, vedio_url, vedio_title, 
+      author_url, author_name, point_count, 
+      share_count, comment_count, create_time, 
+      operator_name, update_time, operator_id, 
+      vedio_data, play_time, category, 
+      autor_user_id, vedio_img, category_id, 
+      delete_status, play_count, collect_count, 
+      weight, today_count, today,detail_link
+      )
+    values (#{id,jdbcType=INTEGER}, #{vedioUrl,jdbcType=VARCHAR}, #{vedioTitle,jdbcType=VARCHAR}, 
+      #{authorUrl,jdbcType=VARCHAR}, #{authorName,jdbcType=VARCHAR}, #{pointCount,jdbcType=INTEGER}, 
+      #{shareCount,jdbcType=INTEGER}, #{commentCount,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{operatorName,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{operatorId,jdbcType=INTEGER}, 
+      #{vedioData,jdbcType=TIMESTAMP}, #{playTime,jdbcType=INTEGER}, #{category,jdbcType=VARCHAR}, 
+      #{autorUserId,jdbcType=VARCHAR}, #{vedioImg,jdbcType=VARCHAR}, #{categoryId,jdbcType=VARCHAR}, 
+      #{deleteStatus,jdbcType=TINYINT}, #{playCount,jdbcType=INTEGER}, #{collectCount,jdbcType=INTEGER}, 
+      #{weight,jdbcType=SMALLINT}, #{todayCount,jdbcType=INTEGER}, #{today,jdbcType=DATE},#{detailLink,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.Vedio">
+    insert into t_vedio
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="vedioUrl != null">
+        vedio_url,
+      </if>
+      <if test="vedioTitle != null">
+        vedio_title,
+      </if>
+      <if test="authorUrl != null">
+        author_url,
+      </if>
+      <if test="authorName != null">
+        author_name,
+      </if>
+      <if test="pointCount != null">
+        point_count,
+      </if>
+      <if test="shareCount != null">
+        share_count,
+      </if>
+      <if test="commentCount != null">
+        comment_count,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="operatorName != null">
+        operator_name,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="operatorId != null">
+        operator_id,
+      </if>
+      <if test="vedioData != null">
+        vedio_data,
+      </if>
+      <if test="playTime != null">
+        play_time,
+      </if>
+      <if test="category != null">
+        category,
+      </if>
+      <if test="autorUserId != null">
+        autor_user_id,
+      </if>
+      <if test="vedioImg != null">
+        vedio_img,
+      </if>
+      <if test="categoryId != null">
+        category_id,
+      </if>
+      <if test="deleteStatus != null">
+        delete_status,
+      </if>
+      <if test="playCount != null">
+        play_count,
+      </if>
+      <if test="collectCount != null">
+        collect_count,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+      <if test="todayCount != null">
+        today_count,
+      </if>
+      <if test="today != null">
+        today,
+      </if>
+      <if test="detailLink != null">
+        detail_link,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="vedioUrl != null">
+        #{vedioUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioTitle != null">
+        #{vedioTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="authorUrl != null">
+        #{authorUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="authorName != null">
+        #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="pointCount != null">
+        #{pointCount,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null">
+        #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null">
+        #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null">
+        #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null">
+        #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="vedioData != null">
+        #{vedioData,jdbcType=TIMESTAMP},
+      </if>
+      <if test="playTime != null">
+        #{playTime,jdbcType=INTEGER},
+      </if>
+      <if test="category != null">
+        #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="autorUserId != null">
+        #{autorUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioImg != null">
+        #{vedioImg,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId != null">
+        #{categoryId,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteStatus != null">
+        #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="playCount != null">
+        #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="collectCount != null">
+        #{collectCount,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=SMALLINT},
+      </if>
+      <if test="todayCount != null">
+        #{todayCount,jdbcType=INTEGER},
+      </if>
+      <if test="today != null">
+        #{today,jdbcType=DATE},
+      </if>
+      <if test="detailLink != null">
+        #{detail_link,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.Vedio">
+    update t_vedio
+    <set>
+      <if test="vedioUrl != null">
+        vedio_url = #{vedioUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioTitle != null">
+        vedio_title = #{vedioTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="authorUrl != null">
+        author_url = #{authorUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="authorName != null">
+        author_name = #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="pointCount != null">
+        point_count = #{pointCount,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null">
+        share_count = #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null">
+        comment_count = #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null">
+        operator_name = #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null">
+        operator_id = #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="vedioData != null">
+        vedio_data = #{vedioData,jdbcType=TIMESTAMP},
+      </if>
+      <if test="playTime != null">
+        play_time = #{playTime,jdbcType=INTEGER},
+      </if>
+      <if test="category != null">
+        category = #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="autorUserId != null">
+        autor_user_id = #{autorUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="vedioImg != null">
+        vedio_img = #{vedioImg,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId != null">
+        category_id = #{categoryId,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteStatus != null">
+        delete_status = #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="playCount != null">
+        play_count = #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="collectCount != null">
+        collect_count = #{collectCount,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=SMALLINT},
+      </if>
+      <if test="todayCount != null">
+        today_count = #{todayCount,jdbcType=INTEGER},
+      </if>
+      <if test="today != null">
+        today = #{today,jdbcType=DATE},
+      </if>
+      <if test="detailLink != null">
+        detail_link = #{detailLink,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.Vedio">
+    update t_vedio
+    set vedio_url = #{vedioUrl,jdbcType=VARCHAR},
+      vedio_title = #{vedioTitle,jdbcType=VARCHAR},
+      author_url = #{authorUrl,jdbcType=VARCHAR},
+      author_name = #{authorName,jdbcType=VARCHAR},
+      point_count = #{pointCount,jdbcType=INTEGER},
+      share_count = #{shareCount,jdbcType=INTEGER},
+      comment_count = #{commentCount,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      operator_id = #{operatorId,jdbcType=INTEGER},
+      vedio_data = #{vedioData,jdbcType=TIMESTAMP},
+      play_time = #{playTime,jdbcType=INTEGER},
+      category = #{category,jdbcType=VARCHAR},
+      autor_user_id = #{autorUserId,jdbcType=VARCHAR},
+      vedio_img = #{vedioImg,jdbcType=VARCHAR},
+      category_id = #{categoryId,jdbcType=VARCHAR},
+      delete_status = #{deleteStatus,jdbcType=TINYINT},
+      play_count = #{playCount,jdbcType=INTEGER},
+      collect_count = #{collectCount,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=SMALLINT},
+      today_count = #{todayCount,jdbcType=INTEGER},
+      today = #{today,jdbcType=DATE},
+       detail_link = #{detailLink,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <!-- 根据视频分类id获取视频分页信息-->
+  <resultMap id="BaseVoResultMap" type="com.dk.vo.VedioVo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="vedio_url" property="vedioUrl" jdbcType="VARCHAR" />
+    <result column="vedio_title" property="vedioTitle" jdbcType="VARCHAR" />
+    <result column="author_url" property="authorUrl" jdbcType="VARCHAR" />
+    <result column="author_name" property="authorName" jdbcType="VARCHAR" />
+    <result column="point_count" property="pointCount" jdbcType="INTEGER" />
+    <result column="share_count" property="shareCount" jdbcType="INTEGER" />
+    <result column="comment_count" property="commentCount" jdbcType="INTEGER" />
+    <result column="vedio_data" property="vedioData" jdbcType="TIMESTAMP" />
+    <result column="play_time" property="playTime" jdbcType="INTEGER" />
+    <result column="play_count" property="playCount" jdbcType="INTEGER" />
+    <result column="category" property="category" jdbcType="VARCHAR" />
+    <result column="autor_user_id" property="autorUserId" jdbcType="VARCHAR" />
+    <result column="vedio_img" property="vedioImg" jdbcType="VARCHAR" />
+    <result column="category_id" property="categoryId" jdbcType="VARCHAR" />
+    <result column="pointId" property="pointId" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="getVoPage" resultMap="BaseVoResultMap" parameterType="com.dk.vo.VedioVo" >
+    select
+    t1.id, t1.vedio_url, left(t1.vedio_title,32)as vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id,t2.id as pointId
+    from t_vedio t1
+    left JOIN t_vedio_point t2 on t1.id = t2.vedio_id  and t2.delete_status = 1 and t2.user_id= #{userId,jdbcType=INTEGER}
+    where t1.category_id = #{categoryId,jdbcType=VARCHAR} and t1.delete_status = 1
+    ORDER  by t1.today_count DESC
+  </select>
+  <!--获取推荐类目数据-->
+  <select id="getRecommendCount" resultType="java.lang.Integer">
+    select
+    count(id)
+    from t_vedio
+    where play_count &gt;=#{playCount,jdbcType=INTEGER}
+  </select>
+  <select id="getRecommendPage" resultMap="BaseVoResultMap" parameterType="com.dk.vo.VedioVo" >
+     select t1.id, t1.vedio_url, left(t1.vedio_title,32)as vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id,t2.id as pointId
+    from  t_vedio t1
+    left JOIN t_vedio_point t2 on t1.id = t2.vedio_id  and t2.delete_status = 1 and t2.user_id= #{userId,jdbcType=INTEGER}
+    where t1.play_count &gt;= #{playCount,jdbcType=INTEGER} and t1.delete_status = 1
+    ORDER  by t1.play_count DESC
+    limit #{countRondom,jdbcType=INTEGER},#{pageSize,jdbcType=INTEGER}
+  </select>
+  <!--  随机获取8条视频-->
+  <!-- SELECT  t1.id, t1.vedio_url, t1.vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+  t1.vedio_data, t1.play_time, t1.category,
+  t1.autor_user_id, t1.vedio_img, t1.category_id
+  FROM `t_vedio` AS t1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM `t_vedio`)-(SELECT MIN(id) FROM `t_vedio` ))+(SELECT MIN(id) FROM `t_vedio` )) AS id) AS t2
+  WHERE t1.id >= t2.id
+  and   t1.delete_status = 1
+  and    today_count &gt;= #{shareCount,jdbcType=INTEGER}
+  ORDER BY t1.id limit 8-->
+  <select id="getRandomVedios" resultMap="BaseResultMap" >
+	select t1.id, t1.vedio_url, left(t1.vedio_title,32)as vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,t1.collect_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id
+	from t_vedio t1
+	WHERE t1.delete_status = 1
+    and   t1.today_count &gt;= #{shareCount,jdbcType=INTEGER}
+    order by rand() LIMIT 4
+  </select>
+
+  <!--  8条视频分页（详情页面）-->
+  <select id="getRandomFontPage" resultMap="BaseResultMap" parameterType="com.dk.vo.VedioVo" >
+    select
+     id, vedio_url, vedio_title, author_url, author_name, point_count, share_count, comment_count,
+    vedio_data, play_time, category,
+    autor_user_id, vedio_img, category_id
+    from t_vedio
+    WHERE  delete_status = 1
+    ORDER  by today_count DESC
+</select>
+  <!--根据id获取视频详情-->
+  <select id="getVedioById" resultType="com.dk.vo.VedioInforVo" >
+    select
+    t1.id, t1.vedio_url as vedioUrl , t1.vedio_title as vedioTitle, t1.author_url as authorUrl, t1.author_name as authorName,
+    t1.point_count as pointCount,t1.share_count as shareCount, t1.comment_count as commentCount,
+    t1.vedio_data as  vedioData, t1.play_time as playTime, t1.category as category,
+    t1.autor_user_id as autorUserId, t1.vedio_img as vedioImg, t1.category_id as categoryId,
+    t1.play_count as playCount,t2.id as pointId,t3.id as collectId
+    from t_vedio t1
+    left JOIN t_vedio_point t2 on t1.id = t2.vedio_id  and t2.delete_status = 1 and t2.user_id= #{userId,jdbcType=INTEGER}
+    left JOIN t_vedio_collect t3 on t1.id = t3.vedio_id  and t3.delete_status = 1 and t3.user_id= #{userId,jdbcType=INTEGER}
+    where t1.delete_status = 1
+    and  t1.id = #{vedioId,jdbcType=INTEGER}
+    limit 1
+  </select>
+  <!--点赞取消点赞-->
+  <update id="addPointCount">
+    update t_vedio set point_count = point_count+1
+    where id = #{vedioId,jdbcType=INTEGER}
+  </update>
+  <update id="subPointCount">
+    update t_vedio set point_count = point_count-1
+    where id = #{vedioId,jdbcType=INTEGER}
+  </update>
+  <!--  播放次数++-->
+  <update id="addPlayCount">
+    update t_vedio set play_count = play_count+1
+    where id = #{vedioId,jdbcType=INTEGER}
+  </update>
+  <!--  分享总次数++-->
+  <update id="addShareCount">
+    update t_vedio set share_count = share_count+1
+    where id = #{vedioId,jdbcType=INTEGER}
+  </update>
+  <!--  分享今天次数++,总次数++ -->
+  <update id="addAllShareCount">
+    update t_vedio set today_count = today_count+1,share_count = share_count+1
+    where id = #{vedioId,jdbcType=INTEGER}
+  </update>
+  <!--视频评论次数++-->
+  <update id="addCommentCount">
+    update t_vedio set comment_count = comment_count+1
+    where id = #{vedioId,jdbcType=INTEGER}
+  </update>
+  <!--  查询某个分类的条数-->
+  <select id="selectCountByCategoryId" resultType="java.lang.Integer">
+    select count(id) from  t_vedio
+    where category_id = #{categoryId,jdbcType=VARCHAR}
+    <if test="shareCount !=null">
+      and today_count &gt;= #{shareCount,jdbcType=INTEGER}
+    </if>
+    and delete_status = 1
+  </select>
+  <!--随机获取某个分类的数据-->
+  <select id="selectRandomByCategoryId" resultMap="BaseVoResultMap">
+    select t1.id, t1.vedio_url, left(t1.vedio_title,32)as vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id,t2.id as pointId
+    from  t_vedio t1
+    left JOIN t_vedio_point t2 on t1.id = t2.vedio_id  and t2.delete_status = 1 and t2.user_id= #{userId,jdbcType=INTEGER}
+    where t1.category_id = #{categoryId,jdbcType=VARCHAR} and t1.delete_status = 1
+    and t1.today_count &gt;= #{shareCount,jdbcType=INTEGER}
+    ORDER  by t1.today_count DESC
+    limit #{randomVlaue,jdbcType=INTEGER},#{randomCount,jdbcType=INTEGER}
+  </select>
+  <!--  视频收藏次数加1-->
+  <update id="addCollectCount">
+    update t_vedio set collect_count = collect_count+1
+    where id = #{vedioId,jdbcType=INTEGER}
+  </update>
+
+  <!-- 根据类型获取视频分页信息 type 1-用户分享的，2-用户点赞的，3-用户评论的，4-用户播放的，5-用户收藏的-->
+  <resultMap id="BaseTypeVoResultMap" type="com.dk.vo.VedioVo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="vedio_url" property="vedioUrl" jdbcType="VARCHAR" />
+    <result column="vedio_title" property="vedioTitle" jdbcType="VARCHAR" />
+    <result column="author_url" property="authorUrl" jdbcType="VARCHAR" />
+    <result column="author_name" property="authorName" jdbcType="VARCHAR" />
+    <result column="point_count" property="pointCount" jdbcType="INTEGER" />
+    <result column="play_count" property="playCount" jdbcType="INTEGER" />
+    <result column="share_count" property="shareCount" jdbcType="INTEGER" />
+    <result column="comment_count" property="commentCount" jdbcType="INTEGER" />
+    <result column="vedio_data" property="vedioData" jdbcType="TIMESTAMP" />
+    <result column="play_time" property="playTime" jdbcType="INTEGER" />
+    <result column="category" property="category" jdbcType="VARCHAR" />
+    <result column="autor_user_id" property="autorUserId" jdbcType="VARCHAR" />
+    <result column="vedio_img" property="vedioImg" jdbcType="VARCHAR" />
+    <result column="category_id" property="categoryId" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="getCommentVoPage" resultMap="BaseTypeVoResultMap" parameterType="com.dk.vo.VedioTypeVo" >
+    select
+    DISTINCT t1.id, t1.vedio_url, t1.vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id
+    from t_vedio t1
+    inner  JOIN t_comment t2 ON  t1.id = t2.vedio_id  and t2.delete_status = 1
+    and t2.user_id = #{userId,jdbcType=VARCHAR}
+    where t1.delete_status = 1
+    order BY  t2.id DESC
+  </select>
+  <select id="getPlayVoPage" resultMap="BaseTypeVoResultMap" parameterType="com.dk.vo.VedioTypeVo" >
+    select
+    DISTINCT t1.id, t1.vedio_url, t1.vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id
+    from t_vedio t1
+    inner  JOIN t_vedio_play t2 ON  t1.id = t2.vedio_id  and t2.delete_status = 1
+    and t2.user_id = #{userId,jdbcType=VARCHAR}
+    where t1.delete_status = 1
+    order BY  t2.id DESC
+  </select>
+  <select id="getCollcettVoPage" resultMap="BaseTypeVoResultMap" parameterType="com.dk.vo.VedioTypeVo" >
+    select
+    DISTINCT t1.id, t1.vedio_url, t1.vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id
+    from t_vedio t1
+    inner  JOIN t_vedio_collect t2 ON  t1.id = t2.vedio_id  and t2.delete_status = 1
+    and t2.user_id = #{userId,jdbcType=VARCHAR}
+    where t1.delete_status = 1
+    order BY  t2.id DESC
+  </select>
+  <select id="getPointVoPage" resultMap="BaseTypeVoResultMap" parameterType="com.dk.vo.VedioTypeVo" >
+    select
+    DISTINCT t1.id, t1.vedio_url, t1.vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id
+    from t_vedio t1
+    inner  JOIN t_vedio_point t2 ON  t1.id = t2.vedio_id  and t2.delete_status = 1
+    and t2.user_id = #{userId,jdbcType=VARCHAR}
+    where t1.delete_status = 1
+    order BY  t2.id DESC
+  </select>
+  <select id="getShareVoPage" resultMap="BaseTypeVoResultMap" parameterType="com.dk.vo.VedioTypeVo" >
+    select
+    DISTINCT t1.id, t1.vedio_url, t1.vedio_title, t1.author_url, t1.author_name, t1.point_count, t1.share_count, t1.comment_count,
+    t1.vedio_data, t1.play_time, t1.category,t1.play_count,
+    t1.autor_user_id, t1.vedio_img, t1.category_id
+    from t_vedio t1
+    inner  JOIN t_vedio_share t2 ON  t1.id = t2.vedio_id  and t2.delete_status = 1
+    and t2.user_id = #{userId,jdbcType=VARCHAR}
+    where t1.delete_status = 1
+    order BY  t2.id DESC
+  </select>
+  <!--  今天分享量大于shareCount的记录数-->
+  <select id="selectCountByShare"  resultType="java.lang.Integer">
+    select
+    count(id)
+    from t_vedio
+    where today_count &gt;= #{shareCount,jdbcType=INTEGER}
+    and delete_status = 1
+  </select>
+
+  <select id="getOneRandowRecord" resultMap="BaseResultMap">
+      SELECT
+        *
+      FROM
+        t_vedio AS t1
+      JOIN (
+        SELECT
+            ROUND(
+                RAND() * (
+                    (SELECT MAX(id) FROM t_vedio where share_count &gt;=#{pushShareCount,jdbcType=INTEGER}) - (SELECT MIN(id) FROM t_vedio where share_count &gt;=#{pushShareCount,jdbcType=INTEGER})
+                ) + (SELECT MIN(id) FROM t_vedio where share_count &gt;=#{pushShareCount,jdbcType=INTEGER})
+            ) AS id
+      ) AS t2
+      WHERE
+        t1.id >= t2.id and t1.share_count &gt;=#{pushShareCount,jdbcType=INTEGER}
+      ORDER BY
+        t1.id
+      LIMIT 1
+  </select>
+
+</mapper>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<properties>
+		<property name="LOG_HOME" value="${sys:catalina.home}/logs/" />
+		<property name="FILE_NAME" value="app.log"/>
+	</properties>
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+		</Console>
+
+		<RollingRandomAccessFile name="running-log"
+								 fileName="${sys:catalina.home}/logs/app/app.log"
+								 filePattern="${sys:catalina.home}/app/$${date:yyyy-MM}/app-%d{yyyy-MM-dd}.log.gz">
+			<PatternLayout
+					pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size="10 MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="30"/>
+		</RollingRandomAccessFile>
+
+	</Appenders>
+
+	<Loggers>
+		<!--<Logger name="org.springframework.jdbc.core.JdbcTemplate" level="debug"-->
+		<!--additivity="true">-->
+		<!--<AppenderRef ref="Console"/>-->
+		<!--</Logger>-->
+		<!--<Logger name="com.nbb" level="all"-->
+		<!--additivity="true">-->
+		<!--<AppenderRef ref="Console"/>-->
+		<!--</Logger>-->
+		<Logger name="org.springframework" level="info" additivity="true">
+			<AppenderRef ref="Console"/>
+		</Logger>
+		<Root level="info">
+			<AppenderRef ref="running-log"/>
+			<AppenderRef ref="Console"/>
+		</Root>
+	</Loggers>
+
+
+</Configuration>

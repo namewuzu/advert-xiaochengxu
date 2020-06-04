@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dk.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.dk.entity.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="avatar_url" jdbcType="VARCHAR" property="avatarUrl" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="concern_count" jdbcType="INTEGER" property="concernCount" />
+    <result column="fans_count" jdbcType="INTEGER" property="fansCount" />
+    <result column="praise_points" jdbcType="INTEGER" property="praisePoints" />
+    <result column="share_count" jdbcType="INTEGER" property="shareCount" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="operator_name" jdbcType="VARCHAR" property="operatorName" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="operator_id" jdbcType="INTEGER" property="operatorId" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="point_count" jdbcType="INTEGER" property="pointCount" />
+    <result column="comment_count" jdbcType="INTEGER" property="commentCount" />
+    <result column="play_count" jdbcType="INTEGER" property="playCount" />
+    <result column="collect_count" jdbcType="INTEGER" property="collectCount" />
+    <result column="is_push" jdbcType="TINYINT" property="isPush" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, avatar_url, nick_name, concern_count, fans_count, praise_points, share_count, 
+    create_time, operator_name, update_time, operator_id, open_id, sex, point_count, 
+    comment_count, play_count, collect_count,is_push
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.User">
+    insert into t_user (id, name, avatar_url, 
+      nick_name, concern_count, fans_count, 
+      praise_points, share_count, create_time, 
+      operator_name, update_time, operator_id, 
+      open_id, sex, point_count, 
+      comment_count, play_count, collect_count,is_push
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{avatarUrl,jdbcType=VARCHAR}, 
+      #{nickName,jdbcType=VARCHAR}, #{concernCount,jdbcType=INTEGER}, #{fansCount,jdbcType=INTEGER}, 
+      #{praisePoints,jdbcType=INTEGER}, #{shareCount,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{operatorName,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{operatorId,jdbcType=INTEGER}, 
+      #{openId,jdbcType=VARCHAR}, #{sex,jdbcType=TINYINT}, #{pointCount,jdbcType=INTEGER}, 
+      #{commentCount,jdbcType=INTEGER}, #{playCount,jdbcType=INTEGER}, #{collectCount,jdbcType=INTEGER},#{isPush,jdbcType=TINYINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.User">
+    insert into t_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="avatarUrl != null">
+        avatar_url,
+      </if>
+      <if test="nickName != null">
+        nick_name,
+      </if>
+      <if test="concernCount != null">
+        concern_count,
+      </if>
+      <if test="fansCount != null">
+        fans_count,
+      </if>
+      <if test="praisePoints != null">
+        praise_points,
+      </if>
+      <if test="shareCount != null">
+        share_count,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="operatorName != null">
+        operator_name,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="operatorId != null">
+        operator_id,
+      </if>
+      <if test="openId != null">
+        open_id,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="pointCount != null">
+        point_count,
+      </if>
+      <if test="commentCount != null">
+        comment_count,
+      </if>
+      <if test="playCount != null">
+        play_count,
+      </if>
+      <if test="collectCount != null">
+        collect_count,
+      </if>
+      <if test="isPush != null">
+        is_push,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="avatarUrl != null">
+        #{avatarUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null">
+        #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="concernCount != null">
+        #{concernCount,jdbcType=INTEGER},
+      </if>
+      <if test="fansCount != null">
+        #{fansCount,jdbcType=INTEGER},
+      </if>
+      <if test="praisePoints != null">
+        #{praisePoints,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null">
+        #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null">
+        #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null">
+        #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="openId != null">
+        #{openId,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="pointCount != null">
+        #{pointCount,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null">
+        #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="playCount != null">
+        #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="collectCount != null">
+        #{collectCount,jdbcType=INTEGER},
+      </if>
+      <if test="isPush != null">
+        #{is_push,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.User">
+    update t_user
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="avatarUrl != null">
+        avatar_url = #{avatarUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null">
+        nick_name = #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="concernCount != null">
+        concern_count = #{concernCount,jdbcType=INTEGER},
+      </if>
+      <if test="fansCount != null">
+        fans_count = #{fansCount,jdbcType=INTEGER},
+      </if>
+      <if test="praisePoints != null">
+        praise_points = #{praisePoints,jdbcType=INTEGER},
+      </if>
+      <if test="shareCount != null">
+        share_count = #{shareCount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null">
+        operator_name = #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null">
+        operator_id = #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="openId != null">
+        open_id = #{openId,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="pointCount != null">
+        point_count = #{pointCount,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null">
+        comment_count = #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="playCount != null">
+        play_count = #{playCount,jdbcType=INTEGER},
+      </if>
+      <if test="collectCount != null">
+        collect_count = #{collectCount,jdbcType=INTEGER},
+      </if>
+      <if test="isPush != null">
+        is_push = #{isPush,jdbcType=TINYINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.User">
+    update t_user
+    set name = #{name,jdbcType=VARCHAR},
+      avatar_url = #{avatarUrl,jdbcType=VARCHAR},
+      nick_name = #{nickName,jdbcType=VARCHAR},
+      concern_count = #{concernCount,jdbcType=INTEGER},
+      fans_count = #{fansCount,jdbcType=INTEGER},
+      praise_points = #{praisePoints,jdbcType=INTEGER},
+      share_count = #{shareCount,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      operator_id = #{operatorId,jdbcType=INTEGER},
+      open_id = #{openId,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=TINYINT},
+      point_count = #{pointCount,jdbcType=INTEGER},
+      comment_count = #{commentCount,jdbcType=INTEGER},
+      play_count = #{playCount,jdbcType=INTEGER},
+      collect_count = #{collectCount,jdbcType=INTEGER},
+       is_push = #{isPush,jdbcType=TINYINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByParam" parameterType="com.dk.entity.User" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_user
+    where open_id=#{openId,jdbcType=VARCHAR}
+    limit 1
+  </select>
+
+  <update id="addPointCount">
+    update t_user
+    set point_count=point_count+1
+    WHERE  id=#{userId,jdbcType=INTEGER}
+  </update>
+  <update id="addPlayCount">
+    update t_user
+    set play_count=play_count+1
+    WHERE  id=#{userId,jdbcType=INTEGER}
+  </update>
+  <update id="addShareCount">
+    update t_user
+    set share_count=share_count+1
+    WHERE  id=#{userId,jdbcType=INTEGER}
+  </update>
+  <update id="addCollectCount">
+    update t_user
+    set collect_count=collect_count+1
+    WHERE  id=#{userId,jdbcType=INTEGER}
+  </update>
+  <update id="addCommentCount">
+    update t_user
+    set comment_count=comment_count+1
+    WHERE  id=#{userId,jdbcType=INTEGER}
+  </update>
+
+</mapper>

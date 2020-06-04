@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="
+    	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd        
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd 
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+
+	<bean id="propertyConfigurer"
+		  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:/config.properties</value>
+			</list>
+		</property>
+	</bean>
+
+<!--	<bean id="imgPathConf" class="com.ande.util.ImgPathUtils">
+		<property name="imgPath" value="${imgDir}" />
+		<property name="userImgPath" value="${userImgDir}" />
+	</bean>-->
+
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		  init-method="init" destroy-method="close">
+		<property name="url" value="${url}" />
+		<property name="username" value="${username}" />
+		<property name="password" value="${password}" />
+		<property name="driverClassName" value="${driverClassName}" />
+		<property name="filters" value="${filters}" />
+
+		<property name="maxActive" value="${maxActive}" />
+		<property name="initialSize" value="${initialSize}" />
+		<property name="maxWait" value="${maxWait}" />
+		<property name="minIdle" value="${minIdle}" />
+
+		<property name="timeBetweenEvictionRunsMillis" value="${timeBetweenEvictionRunsMillis}" />
+		<property name="minEvictableIdleTimeMillis" value="${minEvictableIdleTimeMillis}" />
+
+		<property name="validationQuery" value="${validationQuery}" />
+		<property name="testWhileIdle" value="${testWhileIdle}" />
+		<property name="testOnBorrow" value="${testOnBorrow}" />
+		<property name="testOnReturn" value="${testOnReturn}" />
+		<property name="maxOpenPreparedStatements" value="${maxOpenPreparedStatements}" />
+		<property name="removeAbandoned" value="${removeAbandoned}" /> <!--&lt;!&ndash; 打开removeAbandoned功能 &ndash;&gt;-->
+		<property name="removeAbandonedTimeout" value="${removeAbandonedTimeout}" /> <!--&lt;!&ndash; 1800秒，也就是30分钟 &ndash;&gt;-->
+		<property name="logAbandoned" value="${logAbandoned}" /> <!--&lt;!&ndash; 关闭abanded连接时输出错误日志 &ndash;&gt;-->
+	</bean>
+
+
+	<context:component-scan base-package="com.dk" />
+	<!--&lt;!&ndash; 事务 &ndash;&gt;-->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<bean id="transactionManager"
+		  class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<tx:advice id="txAdvicedrugUser" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="*" propagation="REQUIRED" rollback-for="Exception" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut id="userServiceOperation1"
+					  expression="execution(* com.dk.service.impl.*.*(..))" />
+		<aop:advisor advice-ref="txAdvicedrugUser"
+					 pointcut-ref="userServiceOperation1" />
+	</aop:config>
+
+
+	<!--&lt;!&ndash; mybatis文件配置，扫描所有mapper文件 &ndash;&gt;-->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis_configuration.xml" />
+		<property name="mapperLocations" value="classpath:com/dk/mapper/*/*.xml" />
+	</bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.dk.mapper" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+
+	<!-- ********************************** -->
+	<!-- 面向方面 -->
+	<aop:aspectj-autoproxy  proxy-target-class="true"/>
+
+
+	<!-- *****************************************
+         * 面向切面编程 配置tx/aop声明式事务 使用基于@Transactional注解式声明事务
+         * 与 tx:advice同级,个人认为使用"声明式事务"较清晰
+         *****************************************-->
+
+	<!--<tx:annotation-driven transaction-manager="transactionManager"
+						  proxy-target-class="true" />
+-->
+
+</beans>

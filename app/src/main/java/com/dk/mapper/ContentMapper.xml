@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dk.mapper.ContentMapper" >
+  <resultMap id="BaseResultMap" type="com.dk.entity.Content" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="operator_name" property="operatorName" jdbcType="VARCHAR" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="type_flag" property="typeFlag" jdbcType="TINYINT" />
+    <result column="type_name" property="typeName" jdbcType="VARCHAR" />
+    <result column="img_url" property="imgUrl" jdbcType="VARCHAR" />
+    <result column="music_url" property="musicUrl" jdbcType="VARCHAR" />
+    <result column="share_title" property="shareTitle" jdbcType="VARCHAR" />
+    <result column="share_desc" property="shareDesc" jdbcType="VARCHAR" />
+    <result column="share_img_url" property="shareImgUrl" jdbcType="VARCHAR" />
+    <result column="background" property="background" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.dk.entity.Content" extends="BaseResultMap" >
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, create_time, operator_name, update_time, operator_id, type_flag, type_name, img_url, 
+    music_url, share_title, share_desc, share_img_url, background
+  </sql>
+  <sql id="Blob_Column_List" >
+    content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from t_content
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_content
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.Content" >
+    insert into t_content (id, create_time, operator_name, 
+      update_time, operator_id, type_flag, 
+      type_name, img_url, music_url, 
+      share_title, share_desc, share_img_url, 
+      background, content)
+    values (#{id,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{operatorName,jdbcType=VARCHAR}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{operatorId,jdbcType=INTEGER}, #{typeFlag,jdbcType=TINYINT}, 
+      #{typeName,jdbcType=VARCHAR}, #{imgUrl,jdbcType=VARCHAR}, #{musicUrl,jdbcType=VARCHAR}, 
+      #{shareTitle,jdbcType=VARCHAR}, #{shareDesc,jdbcType=VARCHAR}, #{shareImgUrl,jdbcType=VARCHAR}, 
+      #{background,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.Content" >
+    insert into t_content
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="operatorName != null" >
+        operator_name,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="operatorId != null" >
+        operator_id,
+      </if>
+      <if test="typeFlag != null" >
+        type_flag,
+      </if>
+      <if test="typeName != null" >
+        type_name,
+      </if>
+      <if test="imgUrl != null" >
+        img_url,
+      </if>
+      <if test="musicUrl != null" >
+        music_url,
+      </if>
+      <if test="shareTitle != null" >
+        share_title,
+      </if>
+      <if test="shareDesc != null" >
+        share_desc,
+      </if>
+      <if test="shareImgUrl != null" >
+        share_img_url,
+      </if>
+      <if test="background != null" >
+        background,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null" >
+        #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null" >
+        #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="typeFlag != null" >
+        #{typeFlag,jdbcType=TINYINT},
+      </if>
+      <if test="typeName != null" >
+        #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="imgUrl != null" >
+        #{imgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicUrl != null" >
+        #{musicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="shareTitle != null" >
+        #{shareTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="shareDesc != null" >
+        #{shareDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="shareImgUrl != null" >
+        #{shareImgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="background != null" >
+        #{background,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.Content" >
+    update t_content
+    <set >
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null" >
+        operator_name = #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null" >
+        operator_id = #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="typeFlag != null" >
+        type_flag = #{typeFlag,jdbcType=TINYINT},
+      </if>
+      <if test="typeName != null" >
+        type_name = #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="imgUrl != null" >
+        img_url = #{imgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicUrl != null" >
+        music_url = #{musicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="shareTitle != null" >
+        share_title = #{shareTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="shareDesc != null" >
+        share_desc = #{shareDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="shareImgUrl != null" >
+        share_img_url = #{shareImgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="background != null" >
+        background = #{background,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.dk.entity.Content" >
+    update t_content
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      operator_id = #{operatorId,jdbcType=INTEGER},
+      type_flag = #{typeFlag,jdbcType=TINYINT},
+      type_name = #{typeName,jdbcType=VARCHAR},
+      img_url = #{imgUrl,jdbcType=VARCHAR},
+      music_url = #{musicUrl,jdbcType=VARCHAR},
+      share_title = #{shareTitle,jdbcType=VARCHAR},
+      share_desc = #{shareDesc,jdbcType=VARCHAR},
+      share_img_url = #{shareImgUrl,jdbcType=VARCHAR},
+      background = #{background,jdbcType=VARCHAR},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.Content" >
+    update t_content
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      operator_id = #{operatorId,jdbcType=INTEGER},
+      type_flag = #{typeFlag,jdbcType=TINYINT},
+      type_name = #{typeName,jdbcType=VARCHAR},
+      img_url = #{imgUrl,jdbcType=VARCHAR},
+      music_url = #{musicUrl,jdbcType=VARCHAR},
+      share_title = #{shareTitle,jdbcType=VARCHAR},
+      share_desc = #{shareDesc,jdbcType=VARCHAR},
+      share_img_url = #{shareImgUrl,jdbcType=VARCHAR},
+      background = #{background,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+<!--  分页-->
+  <select id="getPage" resultMap="ResultMapWithBLOBs" parameterType="com.dk.entity.Content" >
+    select
+    id, type_name, img_url
+    from t_content
+    where type_flag = #{typeFlag,jdbcType=TINYINT}
+  </select>
+
+  <select id="getCountByType" resultType="java.lang.Integer">
+    select
+    COUNT(id)
+    from t_content
+    where type_flag = #{typeFlag,jdbcType=TINYINT}
+  </select>
+
+  <select id="getRandomPageByType" resultMap="ResultMapWithBLOBs" parameterType="com.dk.entity.Content" >
+    select
+    id, type_name, img_url
+    from t_content
+    where type_flag = #{typeFlag,jdbcType=TINYINT}
+    limit #{countRondom,jdbcType=INTEGER},#{pageSize,jdbcType=INTEGER}
+  </select>
+</mapper>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.camel:camel-test:2.18.2">
+    <CLASSES>
+      <root url="jar://D:/software/apache-maven-3.5.3-bin/apache-maven-3.5.3/conf/repository/org/apache/camel/camel-test/2.18.2/camel-test-2.18.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/software/apache-maven-3.5.3-bin/apache-maven-3.5.3/conf/repository/org/apache/camel/camel-test/2.18.2/camel-test-2.18.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/software/apache-maven-3.5.3-bin/apache-maven-3.5.3/conf/repository/org/apache/camel/camel-test/2.18.2/camel-test-2.18.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

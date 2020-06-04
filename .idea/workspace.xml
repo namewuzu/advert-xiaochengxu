@@ -1,0 +1,2292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="app:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="2d2ce88b-8440-4cad-b610-df9a826fab20" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/PipixiaService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/util/SHA1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/controller/WechatController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/entity/TextMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/util/SignUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/vo/AdvertVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/util/MessageUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/WechatService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/activemq-client-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/log4j-jcl-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/VedioPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/httpclient-4.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/okhttp-2.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/base/BaseEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/xmlpull-1.1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/xpp3-1.1.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service/impl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/interceptor" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/CommentMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/controller" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/VedioMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/asm-3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/xpp3_min-1.1.4c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jackson-databind-2.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/xstream-1.4.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/log4j-web-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jaxb-core-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/VedioPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/VedioPointMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/Author.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/interceptor/SecurityInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/VedioPointMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/httpcore-nio-4.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/zkclient-0.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/junit-4.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jline-0.9.94.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/VedioMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jsoup-1.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/Vedio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/activemq-jms-pool-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/cglib-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/VedioPointMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/base/BaseEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/activemq-pool-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service/UserServiceI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/VedioShareMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/camel-core-2.18.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/log4j-web-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/pagehelper-4.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/CommentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/stax-api-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/META-INF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/simple-xml-2.6.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/VedioShareMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-oxm-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/VedioShareMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service/impl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/Vedio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/VedioPointMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/controller" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/fastjson-1.1.41.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/controller/user" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/generated-sources/annotations" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/Author.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/server.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/log4j2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/controller/user/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/cglib-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/maven-archiver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jedis-2.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service/UserServiceI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/CommentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-jms-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/base/BaseEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service/base/impl/BaseServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/interceptor" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/druid-0.2.19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/controller/ControllerLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/base/IBaseDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/generatorConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/mybatis_configuration.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/dubbo-2.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-test-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/VedioShare.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-jdbc-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/httpmime-4.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-test-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/netty-3.2.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/netty-3.2.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service/base/impl/BaseServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/httpasyncclient-4.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/httpasyncclient-4.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/activemq-all-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/base/IBaseDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/VedioMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/xmlpull-1.1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-core-3.2.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/controller/user" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/log4j-slf4j-impl-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/base/ResultBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-jms-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/quartz-2.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service/base/IBaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/log4j-api-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/base/ResultBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-expression-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-oxm-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/stax-1.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/interceptor/SecurityInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/dubbo-2.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jsoup-1.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/log4j-1.2-api-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/controller/user/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/gson-2.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/hawtbuf-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/VedioShare.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/VedioShareMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/activemq-pool-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/VedioPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/generated-sources" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/mybatis-generator-core-1.3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/activemq-all-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/okio-1.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/generatorConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/gson-2.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/log4j-jcl-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service/base/impl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/CommentMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/CommentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jaxb-impl-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/zkclient-0.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/log4j-core-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/httpcore-nio-4.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/log4j2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-4.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/base/BaseResultBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/base/ResultBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service/base/impl/BaseServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/Vedio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/xpp3-1.1.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/controller" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/camel-core-2.18.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/zookeeper-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/server.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/VedioShareMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/interceptor/SecurityInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/base/BaseResultBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/VedioMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service/impl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-core-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service/base/impl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jline-0.9.94.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service/base/IBaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/zookeeper-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/httpcore-4.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/base/BaseResultBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/spring_db.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/junit-4.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/log4j2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/simple-xml-2.6.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/controller/ControllerLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jaxb-core-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/VedioPointMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/activemq-client-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.1.41.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/log4j-slf4j-impl-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/controller/ControllerLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jedis-2.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/VedioShareMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/springMvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/base/IBaseDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/controller/user" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/VedioMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/druid-0.2.19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/asm-3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/generatorConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/mybatis_configuration.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/hawtbuf-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-messaging-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/interceptor" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jsqlparser-0.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/httpmime-4.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/server.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/xstream-1.4.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/mysql-connector-java-5.1.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/CommentMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/service/UserServiceI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/stax-1.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-messaging-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/entity/Author.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jackson-core-2.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/META-INF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/springMvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/spring_db.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2-api-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/activemq-jms-pool-5.15.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/c3p0-0.9.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/mapper/base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/aliyun-java-sdk-core-3.2.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/commons-beanutils-1.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/xpp3_min-1.1.4c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/spring_db.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/springMvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jackson-annotations-2.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/entity/VedioShare.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/mybatis-3.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service/base/impl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/mapper/VedioMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/VedioPointMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/mybatis-generator-core-1.3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-beans-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/log4j-core-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-aspects-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/lib/quartz-2.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/app-1.0-SNAPSHOT/WEB-INF/classes/com/dk/service/base/IBaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/controller/user/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-context-support-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-aop-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/lib/spring-tx-4.3.9.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/mybatis_configuration.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/classes/com/dk/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/target/advertApp/WEB-INF/classes/com/dk/service/base" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dms/dms.iml" afterPath="$PROJECT_DIR$/dms/dms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/spring_db.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/spring_db.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioPointMapper.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioPointMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioMapper.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advert.iml" afterPath="$PROJECT_DIR$/advert.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/web/target/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/UserMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioShareMapper.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioShareMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/interceptor/SecurityInterceptor.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/interceptor/SecurityInterceptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/mybatis_configuration.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/mybatis_configuration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/util/spliter/ParseUrl.java" afterPath="$PROJECT_DIR$/web/src/main/java/util/spliter/ParseUrl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/mybatis_configuration.xml" afterPath="$PROJECT_DIR$/web/target/classes/mybatis_configuration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/spring.xml" afterPath="$PROJECT_DIR$/web/target/classes/spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/dk/util/DateUtils.class" afterPath="$PROJECT_DIR$/common/target/classes/com/dk/util/DateUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioPointMapper.xml" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioPointMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/service/UserServiceI.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/service/UserServiceI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioShareMapper.xml" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioShareMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/CommentMapper.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/CommentMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pom.xml" afterPath="$PROJECT_DIR$/app/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/VedioMapper.xml" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/VedioMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/app_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/app_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/dk/util/DateUtils.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/dk/util/DateUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/entity/base/ResultBody.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/entity/base/ResultBody.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/spring_db.xml" afterPath="$PROJECT_DIR$/web/target/classes/spring_db.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/lib/common-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/service/UserServiceI.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/service/UserServiceI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/Vedio.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/Vedio.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/entity/base/BaseResultBody.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/entity/base/BaseResultBody.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioMapper.xml" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/base/BaseResultBody.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/base/BaseResultBody.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/entity/User.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.xml" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/app_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/app_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioMapper.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/entity/Vedio.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/entity/Vedio.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioShareMapper.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioShareMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/interceptor/SecurityInterceptor.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/interceptor/SecurityInterceptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dms/src/main/java/com/dk/util/bobo/URLFecter.java" afterPath="$PROJECT_DIR$/dms/src/main/java/com/dk/util/bobo/URLFecter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/controller/user/UserController.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/controller/user/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/VedioServiceImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/VedioServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/dk/entity/Vedio.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/entity/Vedio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/CommentMapper.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/CommentMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioMapper.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/User.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/Comment.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/Comment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/CommentMapper.xml" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/CommentMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/dk/util/RedisPoolUtil.class" afterPath="$PROJECT_DIR$/common/target/classes/com/dk/util/RedisPoolUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/dk/controller/vedio/VedioController.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/controller/vedio/VedioController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/CommentMapper.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/CommentMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/spring.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/dk/util/WeixinAuthorize/WeixinUtil.class" afterPath="$PROJECT_DIR$/common/target/classes/com/dk/util/WeixinAuthorize/WeixinUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioPointMapper.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioPointMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/UserMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioPointMapper.xml" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/mapper/VedioPointMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioShareMapper.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/mapper/VedioShareMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/com/dk/util/Constants.class" afterPath="$PROJECT_DIR$/common/target/classes/com/dk/util/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/base/ResultBody.class" afterPath="$PROJECT_DIR$/web/target/advertWeb/WEB-INF/classes/com/dk/entity/base/ResultBody.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/controller/user/UserController.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/controller/user/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/com/dk/entity/Comment.class" afterPath="$PROJECT_DIR$/web/target/classes/com/dk/entity/Comment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.java" />
+    </list>
+    <list id="594edecc-cb04-4da2-b6c5-c2e5091a4b88" name="Failed commit: Default" comment="接口" />
+    <list id="26b0502a-33d4-4a76-ae83-27310636d59a" name="Default Changelist" comment="" />
+    <ignored path="advert.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/dms/target/" />
+    <ignored path="$PROJECT_DIR$/app/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/web/target/" />
+    <ignored path="$PROJECT_DIR$/weixin/target/" />
+    <ignored path="$PROJECT_DIR$/qqdomians/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="advert">
+      <favorite_root url="file://$PROJECT_DIR$/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/src/main/java/util/HttpUtils.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/GuangchangwuService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/mapper/DictMapper.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/mapper/DictMapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/util/Constant.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/util/AppConstant.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/util/RedisConstanct.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/util/RedisConstanct.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/VedioMapper.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/DictServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/MeipaiService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/mapper/VedioMapper.java" />
+        <option value="$MAVEN_REPOSITORY$/redis/clients/jedis/2.2.0/jedis-2.2.0-sources.jar!/redis/clients/jedis/BinaryJedis.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/controller/vedio/VedioController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/dk/util/RedisPoolUtil.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/YidianzixunService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/entity/Vedio.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/mapper/VedioMapper.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/QuarzWeight.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/util/spliter/ParseUrl.java" />
+        <option value="$MAVEN_REPOSITORY$/redis/clients/jedis/2.2.0/jedis-2.2.0-sources.jar!/redis/clients/jedis/Connection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/entity/Push.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/dk/util/DateUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/PushMapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/PushServiceImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/listener/RedisMsgPubSubListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/PushMapper.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/service/ContentShareServiceI.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/ContentShareMapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/ContentShareServiceImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/ContentMapper.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/service/ContentServiceI.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/ContentMapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/controller/content/ContentController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/PipixiaService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/CategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/dms/src/main/java/com/dk/util/bobo/URLFecter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/WechatService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/controller/WechatController.java" />
+        <option value="$PROJECT_DIR$/app/pom.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/VedioMapper.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/vo/AdvertVo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/entity/Vedio.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/controller/vedio/VedioController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/VedioServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\apache-maven-3.5.3-bin\apache-maven-3.5.3\conf\repository" />
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.5.3-bin\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="dev" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dms" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dms" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="advert" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="advert" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>XMLSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringModelInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages PackagesPane="false" ProjectPane="false" />
+      <showMembers PackagesPane="true" ProjectPane="false" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages PackagesPane="true" />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="false" />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Production" />
+        <subPane subId="Project Files" />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advert" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wzhuan" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.31264368" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="advert" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\0diankong\workspace\svn\advert\app\src\main\java\com\dk\util" />
+      <recent name="C:\0diankong\workspace\svn\advert\app\src\main\java\com\dk\controller\wxCheck" />
+      <recent name="C:\0diankong\workspace\svn\advert\app\src\main\java\com\dk\mapper" />
+      <recent name="C:\0diankong\workspace\svn\advert\common\src\main\java\com\dk\util\weixin\pay" />
+      <recent name="C:\0diankong\workspace\advert\web\src\main\java\com\dk\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dk.controller" />
+      <recent name="com.dk.service.impl" />
+      <recent name="com.dk.entity" />
+      <recent name="com.dk.service" />
+      <recent name="com.dk.controller.content" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\0diankong\workspace\advert" />
+      <recent name="C:\wuzu\diankong\workspace\product\advert\app\src\main\java\com\dk\mapper\sigin" />
+      <recent name="C:\wuzu\diankong\workspace\advert\app\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration default="false" name="ParseUrl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="util.spliter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="util.spliter.ParseUrl" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="web" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="QuarzWeight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dk.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dk.service.impl.QuarzWeight" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="web" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="PipixiaService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dk.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dk.service.impl.PipixiaService" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="web" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedisMsgPubSubListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dk.listener.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dk.listener.RedisMsgPubSubListener" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="app" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dk.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dk.util.DateUtils" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="common" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="advert" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="UserServiceImpl" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dk.listener.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dk.service.impl.UserServiceImpl" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="app" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="app:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_advert_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62123" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="app:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Application.UserServiceImpl" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ParseUrl" />
+      <item index="3" class="java.lang.String" itemvalue="Application.QuarzWeight" />
+      <item index="4" class="java.lang.String" itemvalue="Application.PipixiaService" />
+      <item index="5" class="java.lang.String" itemvalue="Application.RedisMsgPubSubListener" />
+      <item index="6" class="java.lang.String" itemvalue="Application.DateUtils" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.RedisMsgPubSubListener" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DateUtils" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PipixiaService" />
+        <item index="3" class="java.lang.String" itemvalue="Application.QuarzWeight" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ParseUrl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d2ce88b-8440-4cad-b610-df9a826fab20" name="Default" comment="" />
+      <created>1521039244175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521039244175</updated>
+      <workItem from="1521039247605" duration="6805000" />
+      <workItem from="1521123247912" duration="9677000" />
+      <workItem from="1521165191227" duration="17000" />
+      <workItem from="1521203678011" duration="727000" />
+      <workItem from="1521209188090" duration="669000" />
+      <workItem from="1521262548276" duration="20893000" />
+      <workItem from="1521508332788" duration="9675000" />
+      <workItem from="1521520153580" duration="7751000" />
+      <workItem from="1521720664458" duration="111000" />
+      <workItem from="1521720817788" duration="31163000" />
+      <workItem from="1521882226349" duration="2291000" />
+      <workItem from="1521880090466" duration="121000" />
+      <workItem from="1521880721776" duration="5262000" />
+      <workItem from="1522046251412" duration="2553000" />
+      <workItem from="1522129799631" duration="174000" />
+      <workItem from="1522242423250" duration="1369000" />
+      <workItem from="1522290220128" duration="2539000" />
+      <workItem from="1522316022251" duration="15215000" />
+      <workItem from="1522591777426" duration="13785000" />
+      <workItem from="1522661181983" duration="49631000" />
+      <workItem from="1523639106879" duration="75000" />
+      <workItem from="1523639334265" duration="1097000" />
+      <workItem from="1523811880526" duration="52000" />
+      <workItem from="1523812141535" duration="1362000" />
+      <workItem from="1523175002078" duration="103092000" />
+      <workItem from="1523672774130" duration="35317000" />
+      <workItem from="1523868448405" duration="53820000" />
+      <workItem from="1524040140589" duration="1484000" />
+      <workItem from="1524041684207" duration="1762000" />
+      <workItem from="1524043614822" duration="2556000" />
+      <workItem from="1524046262366" duration="5170000" />
+      <workItem from="1524101731671" duration="23284000" />
+      <workItem from="1524187520967" duration="69600000" />
+      <workItem from="1524534358062" duration="682000" />
+      <workItem from="1524535139615" duration="791000" />
+      <workItem from="1524536035503" duration="252000" />
+      <workItem from="1550402882157" duration="2138000" />
+      <workItem from="1550567117622" duration="6468000" />
+      <workItem from="1550900945755" duration="2725000" />
+      <workItem from="1552098351492" duration="669000" />
+      <workItem from="1552447846424" duration="3212000" />
+      <workItem from="1552461057175" duration="7539000" />
+      <workItem from="1555920161766" duration="7087000" />
+      <workItem from="1555989399929" duration="3256000" />
+      <workItem from="1555993134963" duration="34036000" />
+      <workItem from="1556518735339" duration="5487000" />
+      <workItem from="1557022144064" duration="46754000" />
+      <workItem from="1557458114178" duration="43747000" />
+      <workItem from="1557987197849" duration="81363000" />
+      <workItem from="1558677711759" duration="31738000" />
+      <workItem from="1559273768679" duration="308000" />
+      <workItem from="1559274153590" duration="101860000" />
+      <workItem from="1560305409186" duration="39687000" />
+      <workItem from="1560753789646" duration="15107000" />
+      <workItem from="1560926780683" duration="14108000" />
+      <workItem from="1561043650214" duration="894000" />
+      <workItem from="1561044816969" duration="26299000" />
+      <workItem from="1561651109415" duration="3201000" />
+      <workItem from="1561704926916" duration="42559000" />
+      <workItem from="1562304962313" duration="87000" />
+      <workItem from="1562305671428" duration="10354000" />
+      <workItem from="1564498165183" duration="4439000" />
+      <workItem from="1564655822027" duration="44000" />
+      <workItem from="1564833092591" duration="93000" />
+      <workItem from="1573284848175" duration="41000" />
+      <workItem from="1573539205890" duration="900000" />
+      <workItem from="1573544934610" duration="15000" />
+      <workItem from="1574331440020" duration="644000" />
+      <workItem from="1574420693959" duration="99000" />
+      <workItem from="1574421361226" duration="85000" />
+      <workItem from="1575012099866" duration="21000" />
+      <workItem from="1575012148785" duration="761000" />
+      <workItem from="1575527284998" duration="177000" />
+      <workItem from="1575882137260" duration="1522000" />
+      <workItem from="1576312822742" duration="2119000" />
+      <workItem from="1583738587942" duration="83000" />
+      <workItem from="1585106931472" duration="3525000" />
+      <workItem from="1585288480786" duration="6407000" />
+      <workItem from="1585362474551" duration="6937000" />
+      <workItem from="1589438550419" duration="438000" />
+      <workItem from="1589439589859" duration="348000" />
+      <workItem from="1590564786443" duration="1571000" />
+      <workItem from="1590567268567" duration="2491000" />
+      <workItem from="1591001747969" duration="420000" />
+    </task>
+    <task id="LOCAL-00001" summary="播放时长字段增加">
+      <created>1522318306307</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522318306307</updated>
+    </task>
+    <task id="LOCAL-00002" summary="qq域名检测">
+      <created>1522750387825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522750387825</updated>
+    </task>
+    <task id="LOCAL-00003" summary="qq域名检测">
+      <created>1522750411158</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522750411158</updated>
+    </task>
+    <task id="LOCAL-00004" summary="相关工具类">
+      <created>1522750442779</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522750442779</updated>
+    </task>
+    <task id="LOCAL-00005" summary="定时爬取数据到mysql">
+      <created>1523178419252</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523178419252</updated>
+    </task>
+    <task id="LOCAL-00006" summary="web架构">
+      <created>1523266170259</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523266170260</updated>
+    </task>
+    <task id="LOCAL-00007" summary="web架构">
+      <created>1523266227562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523266227562</updated>
+    </task>
+    <task id="LOCAL-00008" summary="web架构">
+      <created>1523324410978</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523324410978</updated>
+    </task>
+    <task id="LOCAL-00009" summary="登录接口编写">
+      <created>1523324450538</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523324450538</updated>
+    </task>
+    <task id="LOCAL-00010" summary="qq浏览器域名池">
+      <created>1523324995211</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523324995211</updated>
+    </task>
+    <task id="LOCAL-00011" summary="爬虫">
+      <created>1523325046495</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523325046495</updated>
+    </task>
+    <task id="LOCAL-00012" summary="工具类">
+      <created>1523325075399</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523325075399</updated>
+    </task>
+    <task id="LOCAL-00013" summary="用户类">
+      <created>1523343907749</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1523343907749</updated>
+    </task>
+    <task id="LOCAL-00014" summary="获取视频列表">
+      <created>1523356907673</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1523356907674</updated>
+    </task>
+    <task id="LOCAL-00015" summary="pox 文件提交">
+      <created>1523411301041</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1523411301042</updated>
+    </task>
+    <task id="LOCAL-00016" summary="usermapper 提交">
+      <created>1523414892038</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1523414892038</updated>
+    </task>
+    <task id="LOCAL-00017" summary="关注接口提交">
+      <created>1523701841068</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1523701841068</updated>
+    </task>
+    <task id="LOCAL-00018" summary="拦截头修改">
+      <created>1523861266585</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1523861266585</updated>
+    </task>
+    <task id="LOCAL-00019" summary="企业支付逻辑实现">
+      <created>1524050166500</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1524050166500</updated>
+    </task>
+    <task id="LOCAL-00020" summary="接口逻辑实现">
+      <created>1524316394102</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1524316394105</updated>
+    </task>
+    <task id="LOCAL-00021" summary="定时任务">
+      <created>1561011740540</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1561011740540</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestSubscribe - 2019.06.11 at 16h 16m 35s.xml">
+      <configuration name="TestSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 12h 45m 51s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 12h 50m 41s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 12h 54m 37s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 15h 36m 03s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 15h 37m 06s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 15h 41m 45s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 15h 43m 57s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 15h 45m 26s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSubscribe_testSubscribe - 2019.06.11 at 16h 05m 47s.xml">
+      <configuration name="TestSubscribe.testSubscribe" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1044687000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19333333" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12102874" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16868381" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43207857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23567921" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18003273" sideWeight="0.4969651" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2934947" sideWeight="0.4848485" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18588771" sideWeight="0.5151515" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3659306" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="播放时长字段增加" />
+    <MESSAGE value="qq域名检测" />
+    <MESSAGE value="相关工具类" />
+    <MESSAGE value="定时爬取数据到mysql" />
+    <MESSAGE value="web架构" />
+    <MESSAGE value="登录接口编写" />
+    <MESSAGE value="qq浏览器域名池" />
+    <MESSAGE value="爬虫" />
+    <MESSAGE value="工具类" />
+    <MESSAGE value="用户类" />
+    <MESSAGE value="获取视频列表" />
+    <MESSAGE value="pox 文件提交" />
+    <MESSAGE value="usermapper 提交" />
+    <MESSAGE value="关注接口提交" />
+    <MESSAGE value="拦截头修改" />
+    <MESSAGE value="企业支付逻辑实现" />
+    <MESSAGE value="接口逻辑实现" />
+    <MESSAGE value="接口" />
+    <MESSAGE value="定时任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时任务" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/weixin/src/main/java/com.dk/util/weixin/sdk/enterprisePay/TestEnterprisePay.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="69" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/listener/SerializeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/listener/RedisMsgPubSubListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/entity/TextMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/WechatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/util/SignUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/util/SHA1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/WeixinPayServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/util/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/controller/ControllerLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/controller/WechatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/springMvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/spring_db.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2369">
+          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3259">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/service/VedioServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/entity/Advert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/vo/AdvertVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/mapper/AdvertMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="252" column="11" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/entity/Vedio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/server.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/mapper/VedioMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="369" column="67" selection-start-line="369" selection-start-column="67" selection-end-line="369" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/util/AppConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/mapper/VedioMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/util/RedisConstanct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/service/impl/VedioServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/dk/util/ConfigUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-989">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dms/src/main/java/com/dk/util/bobo/URLFecter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/controller/vedio/VedioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/util/RedisConstanct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/service/AdvertServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dms/src/main/java/com/dk/service/impl/SpiderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/util/spliter/ParseUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/PipixiaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/dk/util/RedisPoolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6707">
+          <caret line="368" column="28" selection-start-line="368" selection-start-column="28" selection-end-line="368" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/dk/service/CategoryServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/spring_db.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/dk/service/impl/YidianzixunService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dms/src/main/java/com/dk/util/bobo/HTTPUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dms/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dms/src/main/java/com/dk/util/bobo/ParseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="64" column="60" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/controller/advert/AdvertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dk/controller/content/ContentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>web:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31264368" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31264368" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6.5 (C:\Program Files\Python36\python.exe) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20313862" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31264368" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31264368" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31264368" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dk.mapper.VedioPointMapper" >
+  <resultMap id="BaseResultMap" type="com.dk.entity.VedioPoint" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="vedio_id" property="vedioId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, vedio_id, user_id
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_vedio_point
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_vedio_point
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.VedioPoint" >
+    insert into t_vedio_point (id, vedio_id, user_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{vedioId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.VedioPoint" >
+    insert into t_vedio_point
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="vedioId != null" >
+        vedio_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="vedioId != null" >
+        #{vedioId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.VedioPoint" >
+    update t_vedio_point
+    <set >
+      <if test="vedioId != null" >
+        vedio_id = #{vedioId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.VedioPoint" >
+    update t_vedio_point
+    set vedio_id = #{vedioId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <!--  分页查询-->
+  <resultMap id="BaseVoResultMap" type="com.dk.vo.VedioPointVo" extends="BaseResultMap">
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="nickName" property="nickName" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="getVoPage" parameterType="com.dk.vo.VedioPointVo" resultMap="BaseVoResultMap">
+    select t1.id,t1.create_time,t1.user_id,t1.vedio_id,t2.vedio_title as title,t3.nick_name as nickName
+    from t_vedio_point t1
+    left JOIN t_vedio t2 on t1.vedio_id = t2.id and t2.delete_status = 1
+    LEFT JOIN t_user t3 on t1.user_id = t3.id
+    where 1=1
+    <if test="userId != null" >
+      and t1.user_id = #{userId}
+    </if>
+    <if test="vedioId != null" >
+      and t1.vedio_id = #{vedioId}
+    </if>
+    <if test="startDate != null" >
+      and t1.create_time &gt;= #{startDate}
+    </if>
+    <if test="endDate != null" >
+      and t1.create_time &lt;= #{endtDate}
+    </if>
+  </select>
+</mapper>

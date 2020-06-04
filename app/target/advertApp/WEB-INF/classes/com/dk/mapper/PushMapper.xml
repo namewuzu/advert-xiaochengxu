@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dk.mapper.PushMapper" >
+  <resultMap id="BaseResultMap" type="com.dk.entity.Push" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="operator_name" property="operatorName" jdbcType="VARCHAR" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="operator_id" property="operatorId" jdbcType="INTEGER" />
+    <result column="delete_status" property="deleteStatus" jdbcType="TINYINT" />
+    <result column="form_id" property="formId" jdbcType="VARCHAR" />
+    <result column="form_type" property="formType" jdbcType="TINYINT" />
+    <result column="template_id" property="templateId" jdbcType="VARCHAR" />
+    <result column="openid" property="openid" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="flag" property="flag" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, create_time, operator_name, update_time, operator_id, delete_status, form_id, 
+    form_type, template_id, openid,user_id,flag
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_push
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_push
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dk.entity.Push" useGeneratedKeys="true" keyProperty="id">
+    insert into t_push (id, create_time, operator_name, 
+      update_time, operator_id, delete_status, 
+      form_id, form_type, template_id, 
+      openid,user_id,flag)
+    values (#{id,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{operatorName,jdbcType=VARCHAR}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{operatorId,jdbcType=INTEGER}, #{deleteStatus,jdbcType=TINYINT}, 
+      #{formId,jdbcType=VARCHAR}, #{formType,jdbcType=TINYINT}, #{templateId,jdbcType=VARCHAR}, 
+      #{openid,jdbcType=VARCHAR},#{userId,jdbcType=INTEGER},#{flag,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dk.entity.Push" useGeneratedKeys="true" keyProperty="id">
+    insert into t_push
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="operatorName != null" >
+        operator_name,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="operatorId != null" >
+        operator_id,
+      </if>
+      <if test="deleteStatus != null" >
+        delete_status,
+      </if>
+      <if test="formId != null" >
+        form_id,
+      </if>
+      <if test="formType != null" >
+        form_type,
+      </if>
+      <if test="templateId != null" >
+        template_id,
+      </if>
+      <if test="openid != null" >
+        openid,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="flag != null" >
+        flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null" >
+        #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null" >
+        #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteStatus != null" >
+        #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="formId != null" >
+        #{formId,jdbcType=VARCHAR},
+      </if>
+      <if test="formType != null" >
+        #{formType,jdbcType=TINYINT},
+      </if>
+      <if test="templateId != null" >
+        #{templateId,jdbcType=VARCHAR},
+      </if>
+      <if test="openid != null" >
+        #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null" >
+        #{flag,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dk.entity.Push" >
+    update t_push
+    <set >
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorName != null" >
+        operator_name = #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="operatorId != null" >
+        operator_id = #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteStatus != null" >
+        delete_status = #{deleteStatus,jdbcType=TINYINT},
+      </if>
+      <if test="formId != null" >
+        form_id = #{formId,jdbcType=VARCHAR},
+      </if>
+      <if test="formType != null" >
+        form_type = #{formType,jdbcType=TINYINT},
+      </if>
+      <if test="templateId != null" >
+        template_id = #{templateId,jdbcType=VARCHAR},
+      </if>
+      <if test="openid != null" >
+        openid = #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null" >
+        flag = #{flag,jdbcType=TINYINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dk.entity.Push"  >
+    update t_push
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      operator_id = #{operatorId,jdbcType=INTEGER},
+      delete_status = #{deleteStatus,jdbcType=TINYINT},
+      form_id = #{formId,jdbcType=VARCHAR},
+      form_type = #{formType,jdbcType=TINYINT},
+      template_id = #{templateId,jdbcType=VARCHAR},
+      openid = #{openid,jdbcType=VARCHAR},
+        user_id = #{userId,jdbcType=INTEGER},
+         flag = #{flag,jdbcType=TINYINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <!--  查询今天用户推送的最后一个记录-->
+  <select id="selectByFormId" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List" />
+    from t_push
+    where openid = #{openid,jdbcType=VARCHAR}
+    and flag = 2
+    and  DATE(update_time) = #{today,jdbcType=VARCHAR}
+    order by id DESC
+    limit 1
+  </select>
+  <!--  查询今天用户推送的次数-->
+  <select id="selectCountByParam" resultType="java.lang.Integer" >
+    select
+    COUNT(id)
+    from t_push
+    where openid = #{openid,jdbcType=VARCHAR}
+    and flag = 2
+    and  DATE(update_time) = #{today,jdbcType=VARCHAR}
+  </select>
+</mapper>
